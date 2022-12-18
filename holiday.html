@@ -174,19 +174,47 @@
         #below-div button{
             margin-top: 20px;
             height:35px;
-            width:100px;
+            width:150px;
             background-color: rgb(55, 55, 250);
             color:white;
             margin-left: 80px;
         }
         #place-select{
             height:30px;
-            width:150px;
+            width:200px;
         }
+        #nav{
+        display:flex;
+        justify-content: space-around;
+       }
+       #nav div{
+        display:flex;
+        
+       }
+       .nab{
+        margin-left: 20px;
+       }
     </style>
 </head>
 <body>
-    
+    <div id="nav">
+        <div>
+            <div>
+                <img src=""/>
+            </div>
+            <div  id="back" class="nab"><h3>BackPackers</h3></div>
+            
+          <div class="nab">  <h4>More Travel</h4></div>
+        </div>
+        <div>
+            <div class="nab"> <h4>English</h4></div>
+           
+           <div class="nab"> <h4>Support</h4></div>
+            <div class="nab"><h4>Trips</h4></div>
+            <div class="nab"><h4>Sign In</h4></div>
+        </div>
+    </div>
+
     <div id="top-img">
         <h1>India Trip</h1>
         <h3>Book a Hotel + Flight or Car together to unlock savings</h3>
@@ -434,6 +462,11 @@
             location.replace("NewDelhi.html")
         }
      }
-
+    
+      let goback =document.getElementById("back")
+        goback.addEventListener("click",gobacki)
+        function gobacki(){
+            location.replace("index.html")
+        } 
    </script>
 </html>
